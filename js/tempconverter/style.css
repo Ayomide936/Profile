@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: green;
+}
+body {
+    background-image: linear-gradient(to bottom, teal, white );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+nav {
+    background-color: goldenrod;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+nav h1 {
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: all 1s;
+    font-style: italic;
+}
+nav h1:hover {
+    color: whitesmoke;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+ul li {
+    padding: 1rem;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 0.5;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+ul li a:hover {
+    color: whitesmoke;
+    border-bottom: 1px solid black;
+}
+  .hero {
+     height: 80vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

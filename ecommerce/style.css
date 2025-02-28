@@ -1,0 +1,366 @@
+:root {
+  --primary-bg-color: rgb(7, 1, 1);
+  --prmary-effect: orange;
+  --prmary-color: white;
+  --fs-xl: 2rem;
+  --fs-md: calc(var(--fs-xl) * 0.5);
+  --fs-sm: calc(var(--fs-xl) * 0.25);
+  --px: 1rem;
+  --px-xl: calc(var(--px) * 1.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
+}
+body {
+  overflow-x: hidden;
+}
+title {
+  background-color: gold;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-bg-color);
+  color: var(--prmary-effect);
+  align-items: center;
+  padding: var(--px-xl);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.nav h1 {
+  text-transform: capitalize;
+}
+.nav .res-nav .nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.nav .res-nav .nav-list li {
+  margin: var(--px);
+}
+.nav .res-nav .nav-list li a {
+  color: var(--prmary-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.5 ease-in;
+}
+.nav .res-nav .nav-list li a:hover {
+  color: rgb(255, 153, 0);
+}
+.nav .label,
+.nav #checkbox {
+  display: none;
+}
+
+.header {
+  background-image: url("./img/traditional-italian-pizza-vegetables-ingredients-600nw-795649972.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  color: var(--prmary-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+}
+.header-body {
+  width: 600px;
+  max-width: 700px;
+  padding: 3rem;
+  padding-top: 10rem;
+}
+.header-body h1 .block {
+  display: block;
+  text-transform: capitalize;
+}
+.header-body h1 .block span {
+  color: var(--prmary-effect);
+}
+.header-body .header-content {
+  margin: var(--px);
+  font-size: 0.75;
+}
+.header-body .header-btn {
+  display: block;
+  margin: var(--px);
+  background-color: var(--prmary-effect);
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+  color: var(--prmary-color);
+  width: 150px;
+  background-image: radial-gradient(orange, orangered);
+  animation: anmation 0.5s ease-in 0s infinite forwards alternate;
+}
+.header-body .header-btn::before {
+  content: "";
+  background-image: radial-gradient(orange, orangered);
+}
+
+.our-menu h3 {
+  text-align: center;
+  color: var(--prmary-effect);
+}
+.our-menu h2 {
+  text-align: center;
+}
+.our-menu img {
+  position: absolute;
+  align-self: center;
+  filter: blur(1px);
+}
+.our-menu img.left {
+  left: 0;
+}
+.our-menu img.right {
+  right: 0;
+}
+.btn-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.btn-class button {
+  margin: 1rem;
+  border: 1px solid orangered;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 25px;
+  color: orangered;
+  transition: all 0.5s ease-in;
+}
+.btn-class button:hover {
+  background-color: orangered;
+  color: white;
+}
+.btn-class .active {
+  background-color: orangered;
+  color: white;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product {
+  margin: var(--px);
+  width: 250px;
+  background-color: white;
+  border: 1px solid aliceblue;
+  border-radius: 25px;
+  box-shadow: 2rem 2rem 2rem inset white;
+  padding: 1rem;
+}
+.product .pizza-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product div img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.product .pizza-title {
+  text-align: center;
+  color: var(--prmary-effect);
+}
+.product .pizza-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  color: gray;
+  font-size: 0.75rem;
+}
+.product .pizza-body .size button {
+  margin: 1rem 0rem 1rem 0;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  border: none;
+  padding: 0.5rem;
+}
+#active {
+  background-color: black;
+  color: white;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price p {
+  color: var(--prmary-effect);
+  font-size: var(--fs-xl);
+  margin: 0 7rem 0 0.3rem;
+}
+.price input {
+  width: 30px;
+}
+.pizza-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pizza-footer button {
+  width: 150px;
+  color: white;
+  background-image: linear-gradient(to right, orangered, orange);
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 5rem 5rem 5rem outset orange;
+  transition: all 0.5s ease-in;
+  text-transform: capitalize;
+  animation: anmation 0.5s ease-in 0s infinite forwards alternate;
+}
+.pizza-footer button:hover {
+  background-image: linear-gradient(to right, orange, orangered);
+}
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-btn {
+  width: 150px;
+  color: white;
+  background-image: linear-gradient(to right, orangered, orange);
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 5rem 5rem 5rem outset orange;
+  transition: all 0.5s ease-in;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in;
+}
+.order-btn:hover {
+  background-color: orangered;
+  background-image: linear-gradient(to right, orangered, orangered);
+}
+
+.about-section {
+  background-image: url("./img/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+  padding: 3rem;
+  height: auto;
+}
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.9rem;
+  height: fit-content;
+}
+.about-container .about-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+.about-container .about {
+  width: 300px;
+}
+.about-container .about h3 {
+  text-transform: capitalize;
+  color: var(--prmary-effect);
+}
+.about-container .about h2 {
+  text-transform: capitalize;
+}
+.about-container .about p {
+  color: lightgray;
+}
+.about-head-img {
+  position: absolute;
+  right: 1rem;
+  top: -5rem;
+  width: 150px;
+  height: 150px;
+}
+.footer-about-img {
+  position: absolute;
+  filter: blur(0.1rem);
+  bottom: -140px;
+  left: 43%;
+}
+@keyframes anmation {
+  from {
+    background-image: linear-gradient(to right, orangered, orange);
+  }
+  to {
+    background-image: linear-gradient(to right, orange, orangered);
+  }
+}
+@media screen and (max-width: 786px) {
+  .header {
+    width: 100%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .header-body {
+    width: 300px;
+  }
+  .res-nav {
+    display: none;
+  }
+  .nav .label {
+    display: block;
+  }
+  .nav #checkbox:checked ~ .res-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 1.75rem;
+    background-color: var(--primary-bg-color);
+    height: 90vh;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .our-menu img.left {
+    display: none;
+  }
+  .btn-class-container {
+    margin-top: 15rem;
+  }
+  .btn-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+  }
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-container {
+    flex-direction: column-reverse;
+  }
+  .btn-class-container .btn-class button {
+    width: 100px;
+  }
+  .footer-about-img {
+    display: none;
+  }
+}

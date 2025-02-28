@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    background-image: url("img/Hydrangeas.jpg"), linear-gradient(to bottom,rgba(95, 158, 160,0.5),rgb(240, 248, 255,0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: black;
+}
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+#clock-container {
+    font-size: 5rem;
+}
+#clock {
+    background-color: hsla(0,0%,100%,0.5);
+}
