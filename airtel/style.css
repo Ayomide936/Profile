@@ -454,7 +454,7 @@ nav {
 }
 .airtel-img {
   height: 95vh;
-  width: 100%;
+  width: 100vw;
   display: block;
   object-fit: cover;
 }
@@ -821,6 +821,9 @@ footer {
 }
 .airtel_slider_nav {
    bottom: 50%;
+}
+.airtel-img {
+    width: 100%;
 }
 
 .more {
