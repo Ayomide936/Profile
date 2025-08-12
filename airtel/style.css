@@ -741,6 +741,9 @@ footer {
 .hidden-scroll {
   overflow-y: hidden;
 }
+#list {
+   color: red;
+}
 /* responsive code  */
 @media  screen and (max-width: 1080px) {
   /* responsive navbar */
