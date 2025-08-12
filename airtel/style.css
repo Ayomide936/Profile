@@ -742,8 +742,13 @@ footer {
 /* responsive code  */
 @media  screen and (max-width: 1080px) {
   /* responsive navbar */
-  nav {
-    width: 90%;
+
+  nav,.airtel_slider,
+  .about-slider1,.about-slider2
+  .about-slider3,.about-slider4,
+  .flag-container,.section-container
+  {
+    width: 100%;
   }
     .anavbar {
        flex-direction: column;
@@ -797,11 +802,11 @@ footer {
 }
  .left {
     position: static;
-    padding: 1rem;
+    padding: 0.5rem;
 }
  .right {
     position: static;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .rel-left img,.rel-right img {
   height: 50vh;
