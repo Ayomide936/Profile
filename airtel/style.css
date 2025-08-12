@@ -824,9 +824,7 @@ footer {
 .airtel_slider_nav {
    bottom: 50%;
 }
-.airtel-img {
-    width: 100vw;
-}
+
 
 .more {
   background-color: var(--color3);
@@ -881,6 +879,7 @@ footer {
    footer div {
      flex-direction: column;
    }
+   
    .rel-left,.rel-right {
        display: flex;
        flex-direction: column;
