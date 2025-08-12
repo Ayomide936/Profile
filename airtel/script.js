@@ -51,12 +51,14 @@ function displayBtn(param) {
   const display = document.querySelectorAll(param);
   console.log(display)
   display.forEach( dis => dis.classList.add("btn-display"))
+ document.body.classList.add(".hidden-scroll")
 }
 
 function noDisplay(param) {
  const display = document.querySelectorAll(param);
  console.log(display)
  display.forEach( dis => dis.classList.remove("btn-display"))
+ document.body.classList.remove(".hidden-scroll")
 }
 show()
 /* 

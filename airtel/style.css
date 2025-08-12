@@ -738,16 +738,21 @@ footer div a:hover {
 footer {
   color: rgba(0, 0, 0, 0.625);
 }
-
+.hidden-scroll {
+  overflow-y: hidden;
+}
 /* responsive code  */
 @media  screen and (max-width: 1080px) {
   /* responsive navbar */
 
-  nav,.airtel_slider,
+  nav
+  {
+    width: 100%;
+  }
+  .airtel_slider,
   .about-slider1,.about-slider2
   .about-slider3,.about-slider4,
-  .flag-container,.section-container
-  {
+  .flag-container,.section-container {
     width: 100%;
   }
     .anavbar {
