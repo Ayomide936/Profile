@@ -458,7 +458,7 @@ footer {
 
   .more-content {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.0001rem;
   }
 
   .more-content img {
