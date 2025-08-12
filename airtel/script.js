@@ -2,6 +2,7 @@ const slides = document.querySelectorAll(".airtel-slide");
 let intervalId = null;
 let setIndex = 0;
 const navSlider = document.getElementById("nav-slider1");
+const Body = document.getElementById("body");
 const navSlider2 = document.getElementById("nav-slider2");
 const navSlider3 = document.getElementById("nav-slider3");
 const navSlider4 = document.getElementById("nav-slider4");
@@ -51,14 +52,14 @@ function displayBtn(param) {
   const display = document.querySelectorAll(param);
   console.log(display)
   display.forEach( dis => dis.classList.add("btn-display"))
- document.body.classList.add(".hidden-scroll")
+   Body.classList.add(".hidden-scroll")
 }
 
 function noDisplay(param) {
  const display = document.querySelectorAll(param);
  console.log(display)
  display.forEach( dis => dis.classList.remove("btn-display"))
- document.body.classList.remove(".hidden-scroll")
+ Body.classList.remove(".hidden-scroll")
 }
 show()
 /* 
