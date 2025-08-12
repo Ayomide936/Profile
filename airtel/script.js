@@ -18,7 +18,7 @@ function intialSlide() {
         slides[setIndex].classList.add("display");
     
        
-        setInterval(nextSlider,6000);
+        setInterval(nextSlider,8000);
 }
    
 function showSlide(index) {
