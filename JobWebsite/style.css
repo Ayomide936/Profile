@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(img/hero12.webp);
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+   /* width: 100%; */
+}
+nav h1 {
+    color: teal;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0.3rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.form {
+    background-color: lightgrey; 
+    width: 100%; 
+    height: auto; 
+    padding: 0.5rem; 
+    margin: 0.3rem; 
+    border-radius: 10px; 
+    position: relative; 
+    top: 10%; 
+    left: 20%;
+    z-index: 1;
+}
+.warning {
+    color: red;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0.3rem;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why {
+    margin-top: 7.5%;
+    margin-left: calc(50% - 10px);
+}
+@media  only Screen and  (min-width: 600px){
+    label {
+        display: none;
+    }
+    .form {
+        top: 50%;
+        width: 30%;
+        left: calc(50% - 200px);
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form .input {
+        width: 75%;
+        margin: 1rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form .input:focus {
+        outline: none;
+        border: 2px solid rgba(4, 18, 22, 0.548);
+    }
+    #result {
+    width: 100%;
+}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>job-Empire</title>
+    <meta name="veiwport" width="device-width" initial-scale ="1">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <link rel="icon" href="img/image.webp"> 
+</head>
+<body>
+    <main id="main">
+        <header>
+            <nav>
+                <h1>jobempire</h1>
+            </nav>           
+         <form class="form">
+             <h2 id="warning" class="warning"></h2>
+             <div class="flex">
+  <input type="search" class="input" id="userData" placeholder="enter job">
+  <input type="text" class="input" id="userLocation" placeholder="enter location">
+<button  class="btn btn-primary btn-lg" id="btn" onclick="getUserJob()" type="button">submit</button>
+</div>
+         </form>
+         </header>
+         <div id="results">
+          <div class="spinner-grow text-primary why" role="status">
+         <span class="visually-hidden">Loading...</span>
+         </div>
+         
+         </div>
+<h2 id="error" class="warning"></h2>
+     <script src="script.js"></script>
+     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+
+
+
+  
