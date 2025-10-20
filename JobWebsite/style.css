@@ -51,6 +51,7 @@ nav {
     margin-top: 7.5%;
     margin-left: calc(50% - 10px);
 }
+
 @media  only Screen and  (min-width: 600px){
     label {
         display: none;
@@ -80,5 +81,9 @@ nav {
     }
     #result {
     width: 100%;
+}
+.full-width {
+     width: 100% !important;
+     height: auto ;
 }
 }

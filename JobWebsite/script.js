@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     skills = job.job_required_skills.join(", ");
   }
 
-  resultsDiv.textContent += `
-    <div class="col-md-4">
+  resultsDiv.innerHTML += `
+    <div class="col-md-4 full-width">
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">${job.job_title}</h5>
@@ -106,7 +106,7 @@ async function getUserJob(userInput, userloca) {
     console.log(JSON.stringify(result, null, 2)); // inspect shape
     console.log(result.data[0])
    if (result.data[0] === undefined || result.data[0] === '') {
-       resultsDiv.textContent = `${userInput} job not available`;
+       warnMessage.textContent= `${userInput} job not available`;
        alert(`${userInput} job not available in ${userloca}`)
    }
    
@@ -122,7 +122,7 @@ async function getUserJob(userInput, userloca) {
   }
 
   resultsDiv.innerHTML += `
-    <div class="col-md-4 pt-3">
+    <div class="col-md-4 pt-3 full-width">
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">${job.job_title}</h5>
