@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   resultsDiv.innerHTML += `
-    <div class="col-md-4 full-width">
+    <div class="col-md-4 full-width slide-in">
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">${job.job_title}</h5>
@@ -122,7 +122,7 @@ async function getUserJob(userInput, userloca) {
   }
 
   resultsDiv.innerHTML += `
-    <div class="col-md-4 pt-3 full-width">
+    <div class="col-md-4 pt-3 full-width slide-in">
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">${job.job_title}</h5>
