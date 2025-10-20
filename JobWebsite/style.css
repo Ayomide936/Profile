@@ -16,6 +16,7 @@ nav h1 {
     text-transform: uppercase;
     font-style: italic;
     margin: 0.3rem;
+    animation-delay: 1s;
 }
 nav {
     display: flex;
