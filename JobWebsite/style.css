@@ -7,9 +7,9 @@
 header {
     background-image: url(img/hero12.webp);
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
     background-repeat: no-repeat;
-   /* width: 100%; */
+    width: 100%; 
 }
 nav h1 {
     color: teal;
@@ -32,7 +32,7 @@ nav {
     margin: 0.3rem; 
     border-radius: 10px; 
     position: relative; 
-    top: 10%; 
+    top: 9%; 
     left: 20%;
     z-index: 2;
 }
@@ -58,6 +58,12 @@ nav {
     animation-timing-function: ease-in;
     animation-fill-mode: both;
     animation-iteration-count: 1;
+}
+.rad {
+    border-radius: 20px;
+}
+.full-width {
+    padding: 1rem;
 }
 @keyframes slide {
     0% {
@@ -101,11 +107,16 @@ nav {
     }
     #result {
     width: 100%;
+    padding: 1rem;
 }
 .full-width {
      width: 100% !important;
      height: auto ;
      position: relative;
      z-index: -1;
+     padding: 1rem;
+}
+.rad {
+    border-radius: 20px;
 }
 }
