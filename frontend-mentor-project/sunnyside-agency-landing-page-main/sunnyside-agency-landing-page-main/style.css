@@ -1,0 +1,109 @@
+@import 'https://fonts.google.com/specimen/Barlow';
+@import 'https://fonts.google.com/specimen/Fraunces';
+:root {
+
+ --Red-400: hsl(7, 99%, 70%);
+--Yellow-500: hsl(51, 100%, 49%);
+--Green-800-graphic-design-text: hsl(167, 40%, 24%);
+--Blue-800-photography-text: hsl(198, 62%, 26%);
+--Green-500-footer: hsl(167, 34%, 41%);
+
+
+
+--Grey-950: hsl(212, 27%, 19%);
+--Grey-600: hsl(213, 9%, 39%);
+--Grey-550: hsl(232, 10%, 55%);
+--Grey-400: hsl(210, 4%, 67%);
+--White: hsl(0, 100%, 100%);
+--Font-size: 18px;
+font-family: Barlow Fraunces ;
+--fw: 600;
+--fw-md: 700;
+--fw-l: 900;
+}
+/** reset style **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+header {position: relative; height: auto; margin-bottom:0%;}
+header img {
+   height: 90vh; 
+   width: 100%; 
+   max-width: 100%; 
+   object-fit: cover; 
+   position: relative; 
+   aspect-ratio: 16/9;
+}
+.headerDiv {
+    position: absolute;
+    top: 0;
+}
+.img-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin: 1rem;
+}
+.navigation  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+#hamburger {
+    display: none;
+}
+.hamburger {
+        width: 50px;
+    height: auto;
+    object-fit: contain;
+    display: none;
+}
+ .responsive {
+     margin-left: 49rem; 
+}  
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+ul li {
+    padding: 0.8rem;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 45px;
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.nav-btn:hover {
+    background-color: rgba(0,0,0,0.1);
+    filter: opacity(0.7);
+    color: var(--White);
+}
+header p {
+    position: absolute;
+    top: 9rem;
+    left: 24rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--White);
+    text-transform: uppercase;
+}
+/** transform **/
+.transform-band-section{
+    margin-top: 0;
+}
