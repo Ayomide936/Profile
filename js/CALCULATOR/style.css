@@ -24,8 +24,8 @@ body {
 #keys {
    display: grid;
    grid-template-columns: repeat(4,1fr);
-   gap: 5px;
-   padding: 15px;
+   gap: 3px;
+   padding: 4px;
 }
 button {
     width: 80px;
