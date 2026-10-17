@@ -1,6 +1,7 @@
 body {
    margin: 0;
    height: 100vh;
+   background-color: hsl(0, 8%, 10%);
 }
 
 
@@ -10,6 +11,7 @@ body {
    border-radius: 15px;
    width: 100%;
    overflow: hidden;
+   height: 100vh;
 }
 #display {
    width: 100%;
@@ -26,8 +28,8 @@ body {
    padding: 25px;
 }
 button {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: none;
     background-color: cornflowerblue;
